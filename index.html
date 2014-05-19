@@ -14,7 +14,7 @@
     <link href="assets/images/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">  
     <link href="assets/images/apple-touch-icon-57x57.png" sizes="57x57" rel="apple-touch-icon">  
             
-    <title>Yello</title> 
+    <title>Yello - Teacher</title> 
     
     <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
 	<link rel="stylesheet" href="lib/onsen/css/topcoat-mobile-onsen-ios7.css">
@@ -24,10 +24,12 @@
 	<script src="lib/onsen/js/onsenui.js"></script>    
 	
 	<link rel="stylesheet" href="assets/css/app.css"/>
+	<link rel="stylesheet" href="assets/css/teacher-app.css"/>
 	
 	<script src="assets/fonts/pika/ss-pika.js"></script>
 	<script src="assets/js/menu.min.js"></script>
 	<script src="assets/js/app.min.js"></script>
+	<script src="assets/js/teacher-app.min.js"></script>
     
 </head>
 <body>
@@ -44,7 +46,7 @@
 		        				<h1>Teacher</h1>
 		        			</div>
 		        		<div class="splash-intro">
-		        			<h3>Engage and enjoy every school trip</h3>
+		        			<h3>Organise Yello school trips with ease</h3>
 		        			<ons-button id="login-btn" class="btn purple-btn">Get started</ons-button>
 
 		        			<!--<ons-button ng-click="ons.screen.resetToPage('challenges.html')" id="login-btn" class="btn purple-btn">Get started</ons-button>-->
@@ -60,31 +62,10 @@
 				    	<span class="avatar">Avatar</span>
 				    	<input type="text" name="username" placeholder="Username" />
 				    	<input type="password" name="password" placeholder="Password" />
-				    	<a class="btn blue-btn" id="group-btn">Log in</a>
+				    	<a class="btn blue-btn" ng-click="ons.screen.resetToPage('timeline.html')">Log in</a>
 				    </div>
 				</div>
 				<!-- /.mini-modal-login -->
-				<!-- .mini-modal-group -->
-				<div class="mini-modal-wrap mini-modal-group">
-				    <div class="mini-modal">
-				        <h3>Selected group</h3>
-				        <h1>Purple</h1>
-				        <ul class="scroll-carousel group-list-avatars" data-snap-ignore="true">
-				        	<li class="avatar john">James Wilson</li>
-				        	<li class="avatar james">John Evans</li>
-				        	<li class="avatar sarah">Sarah Jones</li>
-				        	<li class="avatar kele">Kele Homes</li>
-				        	<li class="avatar steve">Steve Austin</li>
-				        	<li class="avatar denver">Denver Washington</li>
-				        	<li class="avatar natasha">Natasha Cope</li>
-				        	<li class="avatar teacher">Mrs Davis</li>
-				        </ul>
-				        <div class="modal-footer">
-				           <button class="btn blue-btn close-mini-modal" ng-click="ons.screen.resetToPage('timeline.html')">Begin trip</button> 
-				        </div>
-				    </div>
-				</div>
-				<!-- /.mini-modal-group -->
 				
 				<div class="dark-splash-overlay dark-overlay"></div>
 				
@@ -147,10 +128,12 @@
    	</div>
    	<!-- /Notification Modal -->
    	
+   	<!-- .landscape-modal -->
    	<div class="landscape-modal">
    		<h1>Yello was designed for landscape only!</h1>
    		<h4>Due to software restrictions, Yello could not be locked to portait.</h4>
    	</div>
+   	<!-- /.landscape-modal -->
    	
 </body>
 </html>

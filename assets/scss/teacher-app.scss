@@ -1,1 +1,23 @@
 @import "app.scss";
+
+.splash-inner{
+	
+	& .splash{
+	
+		& h1{
+			text-indent: 0;
+			white-space: normal;
+			overflow: visible;
+			text-align: center;
+			padding-top: 110px;
+			margin-top: 10px;
+			height: 100px;
+			background-size: 170px;
+			font-size: 26px;
+			color: white;
+			color: darken(#1daafc, 20%);
+			font-weight: 700;
+			//text-shadow: 1px 2px 0 rgba(0,0,0,0.2);
+		}
+	}
+}
