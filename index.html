@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, user-scalable=no" />-->
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="width=320.1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Yello">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="assets/images/apple-touch-icon-120x120.png" sizes="120x120" rel="apple-touch-icon">
+    <link href="assets/images/apple-touch-icon-114x114.png" sizes="114x114" rel="apple-touch-icon">
+    <link href="assets/images/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">  
+    <link href="assets/images/apple-touch-icon-57x57.png" sizes="57x57" rel="apple-touch-icon">  
+            
+    <title>Yello</title> 
+    
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
+	<link rel="stylesheet" href="lib/onsen/css/topcoat-mobile-onsen-ios7.css">
+	
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="lib/onsen/js/angular/angular.js"></script>    
+	<script src="lib/onsen/js/onsenui.js"></script>    
+	
+	<link rel="stylesheet" href="assets/css/app.css"/>
+	
+	<script src="assets/fonts/pika/ss-pika.js"></script>
+	<script src="assets/js/menu.min.js"></script>
+	<script src="assets/js/app.min.js"></script>
+    
+</head>
+<body>
+    <ons-screen id="container">
+    	<ons-navigator title="Screen" hide-toolbar="true">       
+	        <ons-page data-snap-ignore="true" class="splash-wrap">
+	        
+	        	<ons-scroller>
+
+		        	<!-- .splash-wrap -->
+		        	<div class="splash-inner inner-content">
+		        			<div class="splash">
+		        				<img src="assets/images/splash.svg" class="Yello">
+		        				<h1>Teacher</h1>
+		        			</div>
+		        		<div class="splash-intro">
+		        			<h3>Engage and enjoy every school trip</h3>
+		        			<ons-button id="login-btn" class="btn purple-btn">Get started</ons-button>
+
+		        			<!--<ons-button ng-click="ons.screen.resetToPage('challenges.html')" id="login-btn" class="btn purple-btn">Get started</ons-button>-->
+		        		</div>
+		        	</div>
+		        	<!-- /.splash-wrap -->
+					
+				</ons-scroller>
+				
+				<!-- .mini-modal-login -->
+				<div class="mini-modal-wrap mini-modal-login">
+				    <div class="mini-modal">
+				    	<span class="avatar">Avatar</span>
+				    	<input type="text" name="username" placeholder="Username" />
+				    	<input type="password" name="password" placeholder="Password" />
+				    	<a class="btn blue-btn" id="group-btn">Log in</a>
+				    </div>
+				</div>
+				<!-- /.mini-modal-login -->
+				<!-- .mini-modal-group -->
+				<div class="mini-modal-wrap mini-modal-group">
+				    <div class="mini-modal">
+				        <h3>Selected group</h3>
+				        <h1>Purple</h1>
+				        <ul class="scroll-carousel group-list-avatars" data-snap-ignore="true">
+				        	<li class="avatar john">James Wilson</li>
+				        	<li class="avatar james">John Evans</li>
+				        	<li class="avatar sarah">Sarah Jones</li>
+				        	<li class="avatar kele">Kele Homes</li>
+				        	<li class="avatar steve">Steve Austin</li>
+				        	<li class="avatar denver">Denver Washington</li>
+				        	<li class="avatar natasha">Natasha Cope</li>
+				        	<li class="avatar teacher">Mrs Davis</li>
+				        </ul>
+				        <div class="modal-footer">
+				           <button class="btn blue-btn close-mini-modal" ng-click="ons.screen.resetToPage('timeline.html')">Begin trip</button> 
+				        </div>
+				    </div>
+				</div>
+				<!-- /.mini-modal-group -->
+				
+				<div class="dark-splash-overlay dark-overlay"></div>
+				
+			</ons-page>
+	    </ons-navigator>
+   	</ons-screen>
+   	
+   	<!-- .mini-modal-login -->
+   	<div class="mini-modal-wrap mini-modal-exit">
+   	    <div class="mini-modal">
+   	    	<span class="avatar john">Avatar</span>
+   	    	<h3>Enter the unique trip pin to exit Yello!</h3>
+   	    	<input type="text" name="pin-1" value="7" />
+   	    	<input type="text" name="pin-2" value="4" />
+   	    	<input type="text" name="pin-3" value="2" />
+   	    	<br class="clearfix">
+   	    	<a class="btn blue-btn close-mini-modal">Exit Yello</a>
+   	    </div>
+   	</div>
+   	<!-- /.mini-modal-login -->
+   	  
+   	<!-- .main-nav -->
+   	<nav class="snap-drawers side-menu">
+   		<ul class="snap-drawer snap-drawer-left" id="left-drawer">
+   			<li class="snap-btn"><button ng-click="ons.navigator.pushPage('timeline.html')" class="tab-item ss-clock current"></button></li>
+   			<li class="snap-btn"><button ng-click="ons.navigator.pushPage('group.html')" class="tab-item ss-usergroup">
+   			</button></li>
+   			<li class="snap-btn"><button ng-click="ons.navigator.pushPage('challenges.html')" class="tab-item ss-checkclipboard"></button></li>
+   			<li class="snap-btn"><button ng-click="ons.navigator.pushPage('profile.html')" class="tab-item ss-user"></button></li>
+   			<li class="exit-yello"><button class="tab-item ss-logout exit-yello-btn">Exit</button></li>
+   		</ul>
+   	</nav>
+   	<!-- /.main-nav -->
+   	
+   	<div class="dark-body-overlay dark-overlay"></div>
+   	
+   	<!-- Notification Modal -->
+   	<div class="notify-modal alert-modal">
+   		<h1 class="logo"></h1>
+   		<div class="inner-notify-modal">
+   			<h2 class="other-browser h3">This app was built for the iPhone and is only compatible with iOS or Mac Safari Browsers!</h2>
+   			<h2 class="safari h3">Open this webapp on your iPhone to experience it as a fully fledged app!</h2>
+   			<button class="close-notify-modal btn">No thanks!</button>
+   		</div>
+   	</div>
+   	<!-- /Notification Modal -->
+   	
+   	<!-- Notification Modal -->
+   	<div class="notify-modal ios-modal">
+   		<h1 class="logo"></h1>
+   		<div class="inner-notify-modal inner-help-install">
+   			<h2 class="ios h3">Simple steps to install Yello:</h2>
+   			<ul class="app-install-how">
+   				<li class="safari-actions">Press Safari actions</li>
+   				<li class="add-hscreen">Add to Home Screen</li>
+   				<li class="open-yello">Open Yello!</li>
+   			</ul>
+   		</div>
+   		<button class="close-notify-modal btn">Close</button>
+   	</div>
+   	<!-- /Notification Modal -->
+   	
+   	<div class="landscape-modal">
+   		<h1>Yello was designed for landscape only!</h1>
+   		<h4>Due to software restrictions, Yello could not be locked to portait.</h4>
+   	</div>
+   	
+</body>
+</html>
