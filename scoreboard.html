@@ -1,0 +1,169 @@
+<ons-navigator title="Active School Trip" hide-toolbar="true">
+	<ons-page class="timeline-wrap teacher-wrap">
+	
+		<!-- .bar-nav -->
+		<header class="bar bar-nav">
+		    <h1 class="title logo"></h1>
+		    <a id="right-side-menu" class="icon icon-menu pull-right"></a>
+		</header>
+		<!-- /.bar-nav -->
+		
+		<!-- .sub-bar-nav -->
+		<header class="bar bar-nav sub-bar-nav trip-sub-bar-nav" ng-click="ons.screen.resetToPage('timeline.html')">
+		    <h1 class="title">Yr8 London Trip</h1>
+		    <div class="progress-bar-wrap">
+		        <span class="progress-bar bar-80"></span>
+		    </div>
+		</header>
+		<!-- /.sub-bar-nav -->
+		
+		<ons-scroller>
+		    <div class="content-title">
+		    	<h1>Trip Scoreboards</h1>
+		    	<span class="content-title-meta ss-clock">Active School Trip</span>
+		    </div>
+		    
+		    <!-- .challenges-table -->
+		    <div class="content-item challenges-results challenges-item challenges-top-3">
+		    	<div class="sub-title ss-analytics">Scoreboards</div>
+		    	<ul class="scroll-carousel" data-snap-ignore="true">
+		        	<li class="card">
+		        		<h2>Groups</h2>
+		        		<h4>Top 5 Group performers!</h4>
+		        		<ul class="challenges-table">
+		        			<li class="gold">
+		        			    <a class="green">
+		        			    	<span class="position">1</span>
+		        			    	<h3>Green</h3>
+		        			    	<span class="points">32pts</span>
+		        			    </a>
+		        			</li>
+		        			<li class="silver">
+		        				<a class="blue">
+		        					<span class="position">2</span>
+		        				    <h3>Blue</h3>
+		        				    <span class="points">31pts</span>
+		        			    </a>
+		        			</li>
+		        			<li class="bronze">
+		        				<a class="purple">
+		        					<span class="position">3</span>
+		        				    <h3>Purple</h3>
+		        				    <span class="points">25pts</span>
+		        			    </a>
+		        			</li>
+		        			<li>
+		        				<a class="yellow">
+		        					<span class="position">4</span>
+		        				    <h3>Yellow</h3>
+		        				    <span class="points">20pts</span>
+		        			    </a>
+		        			</li>
+		        			<li>
+		        				<a class="red">
+		        					<span class="position">5</span>
+		        				    <h3>Red</h3>
+		        				    <span class="points">19pts</span>
+		        			    </a>
+		        			</li>
+		        		</ul>
+		        	</li>
+		        	<li class="card">
+		        		<h2>Individuals</h2>
+		        		<h4>Top 5 Student Performers!</h4>
+		        		<ul class="challenges-table challenges-individual">
+		        			<li class="gold" ng-click="ons.screen.presentPage('profile-purple.html')">
+		        			    <a class="green">
+		        			    	<span class="avatar sarah">1</span>
+		        			    	<h3>Jason Gomes</h3>
+		        			    	<span class="points">48pts</span>
+		        			    </a>
+		        			</li>
+		        			<li class="silver" ng-click="ons.screen.presentPage('profile-purple.html')">
+		        				<a class="blue">
+		        					<span class="avatar steve">1</span>
+		        				    <h3>Steve Austin</h3>
+		        				    <span class="points">42pts</span>
+		        			    </a>
+		        			</li>
+		        			<li class="bronze" ng-click="ons.screen.presentPage('profile-purple.html')">
+		        				<a class="purple">
+		        					<span class="avatar sarah">1</span>
+		        				    <h3>Sarah Jones</h3>
+		        				    <span class="points">37pts</span>
+		        			    </a>
+		        			</li>
+		        			<li>
+		        				<a class="yellow" ng-click="ons.screen.presentPage('profile-purple.html')">
+		        					<span class="avatar james">1</span>
+		        				    <h3>John Evans</h3>
+		        				    <span class="points">36pts</span>
+		        			    </a>
+		        			</li>
+		        			<li>
+		        				<a class="red" ng-click="ons.screen.presentPage('profile-purple.html')">
+		        					<span class="avatar denver">1</span>
+		        				    <h3>Denver Wash...</h3>
+		        				    <span class="points">24pts</span>
+		        			    </a>
+		        			</li>
+		        		</ul>
+		        		<!--<a class="btn card-btn">View Trip Scores</a>-->
+		        	</li>
+		        	<li class="card">
+		        		<h2>Group</h2>
+		        		<h4>Top 5 performers in your Group!</h4>
+		        		<ul class="challenges-table challenges-individual">
+		        			<li class="gold" ng-click="ons.screen.presentPage('profile-purple.html')">
+		        			    <a class="green">
+		        			    	<span class="avatar kele">1</span>
+		        			    	<h3>Kele Homes</h3>
+		        			    	<span class="points">85pts</span>
+		        			    </a>
+		        			</li>
+		        			<li class="silver" ng-click="ons.screen.presentPage('profile-purple.html')">
+		        				<a class="blue">
+		        					<span class="avatar katie">1</span>
+		        				    <h3>Katie Hopkins</h3>
+		        				    <span class="points">74pts</span>
+		        			    </a>
+		        			</li>
+		        			<li class="bronze" ng-click="ons.screen.presentPage('profile-purple.html')">
+		        				<a class="purple">
+		        					<span class="avatar denver">1</span>
+		        				    <h3>Denver Wash...</h3>
+		        				    <span class="points">56pts</span>
+		        			    </a>
+		        			</li>
+		        			<li>
+		        				<a class="yellow" ng-click="ons.screen.presentPage('profile-purple.html')">
+		        					<span class="avatar natasha">1</span>
+		        				    <h3>Natasha Cope</h3>
+		        				    <span class="points">45pts</span>
+		        			    </a>
+		        			</li>
+		        			<li>
+		        				<a class="red" ng-click="ons.screen.presentPage('profile-close.html')">
+		        					<span class="avatar john">1</span>
+		        				    <h3>James Wilson</h3>
+		        				    <span class="points">24pts</span>
+		        			    </a>
+		        			</li>
+		        		</ul>
+		        		<!--<a class="btn card-btn">View Trip Scores</a>-->
+		        	</li>
+		        </ul>
+		        
+		        <ul class="scroll-dots">
+		        	<li></li>
+		        	<li></li>
+		        	<li></li>
+		        </ul>
+		        
+		    </div>
+		    <!-- /.challenges-table -->
+		
+		</ons-scroller>
+	
+	</ons-page>	 
+</ons-navigator>

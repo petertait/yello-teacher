@@ -1,0 +1,77 @@
+<ons-navigator title="School Trips" hide-toolbar="true"  data-snap-ignore="true">
+	<ons-page class="create-trip-wrap modal" data-snap-ignore="true">
+	
+		<!-- .bar-nav -->
+		<header class="bar bar-nav">
+			<a ng-click="ons.screen.dismissPage()" class="icon icon-close pull-left"></a>
+		    <h1 class="title">Trip Creator</h1>
+		    <a class="pull-right pull-right-text" ng-click="ons.navigator.pushPage('create-trip-2.html')">Next</a>
+		</header>
+		<!-- /.bar-nav -->
+		
+		<ons-scroller>
+	
+			<h1 class="content-title">Trip Details</h1>
+			
+			<!-- .sub-bar-nav -->
+			<header class="bar bar-nav sub-bar-nav trip-sub-bar-nav">
+			    <h1 class="title">Step 1 of 5</h1>
+			    <div class="progress-bar-wrap">
+			        <span class="progress-bar bar-0"></span>
+			    </div>
+			</header>
+			<!-- /.sub-bar-nav -->
+			
+			<!-- .create-trip-content -->
+			<ul class="create-trip-content">
+	
+				<li class="card question-wrap">
+					<h3 class="question">Title</h3>
+					<input value="Yr 7 Science Trip">
+				</li>
+				
+				<li class="card question-wrap">
+					<h3 class="question">Description</h3>
+					<textarea>Year 7 are looking to learn all about the topic of Science. Ranging from natural science, such as the human body ranging to the science space and how humans first landed on the Moon. We will travel around London exploring the museums and having lunch in Convent Gardens</textarea>
+				</li>
+				
+				<li class="card question-wrap">
+					<h3 class="question">Dates</h3>
+					<select>
+						<option>23/01/2014</option>
+					</select>
+					<select>
+						<option>24/01/2014</option>
+					</select>
+				</li>
+				
+				<li class="card question-wrap">
+					<h3 class="question">Year Group</h3>
+					<select>
+						<option>Year 7</option>
+						<option>Year 8</option>
+						<option>Year 9</option>
+						<option>Year 10</option>
+						<option>Year 11</option>
+						<option>Year 12</option>
+						<option>Year 13</option>
+						<option>All Years</option>
+					</select>
+				</li>
+				
+				<li class="card question-wrap pin-question-wrap">
+					<h3 class="question">Unique Trip Pin</h3>
+					<input type="number" min="0" max="9" value="7" class="pin-1">
+					<input type="number" min="0" max="9" value="9" class="pin-2">
+					<input type="number" min="0" max="9" value="2" class="pin-3">
+				</li>
+	
+			</ul>
+			<!-- /.create-trip-content -->
+			
+			<button class="btn purple-btn" ng-click="ons.navigator.pushPage('create-trip-2.html')">Add Students</button>
+		
+		</ons-scroller>
+	
+	</ons-page>	 
+</ons-navigator>

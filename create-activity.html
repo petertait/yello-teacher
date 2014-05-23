@@ -1,0 +1,132 @@
+<ons-page class="create-trip-wrap create-activity-wrap create-challenge-wrap modal" data-snap-ignore="true">
+
+	<!-- .bar-nav -->
+	<header class="bar bar-nav">
+		<a ng-click="ons.navigator.popPage()" class="icon icon-left pull-left"></a>
+	    <h1 class="title">Trip Creator</h1>
+	</header>
+	<!-- /.bar-nav -->
+	
+	<!-- .bar-nav -->
+	<header class="bar bar-nav sub-bar-nav">
+	    <h1 class="title">Create Activity</h1>
+	</header>
+	<!-- /.bar-nav -->
+	
+	<ons-scroller>
+					
+		<!-- .create-students-content -->
+		<div class="create-trip-content create-activity-content create-challenge-content full-content-item">
+			
+			<!-- .add-challenge-questions -->
+			<div class="add-challenge-questions">
+				<h2 class="add-questions-title">Select Activity Type</h2>
+				<ul class="scroll-carousel" data-snap-ignore="true">
+					<li>
+						<button class="add-challenge-btn challenge-checklist-btn ss-departure">Transport</button>
+					</li>
+					<li>
+						<button class="add-challenge-btn challenge-photo-btn ss-openbook current">Museum</button>
+					</li>
+					<li>
+						<button class="add-challenge-btn challenge-text-btn ss-tabletennis">Sports</button>
+					</li>
+					<li>
+						<button class="add-challenge-btn challenge-photo-btn ss-video">Entertainment</button>
+					</li>
+					<li>
+						<button class="add-challenge-btn challenge-checklist-btn ss-utensils">Break</button>
+					</li>
+				</ul>
+			</div>
+			<!-- /.add-challenge-questions -->
+			
+			<h2 class="sub-title create-activity-title">Activity Details</h2>
+			<ul class="card">
+				
+				<li class="card question-wrap" style="margin-top: 50px;">
+					<h3 class="question main-question">Activity Type</h3>
+					<p class="static-answer">Museum</p>
+				</li>
+				
+				<li class="card question-wrap">
+					<h3 class="question main-question">Select Country</h3>
+					<select>
+						<option>UK</option>
+						<option>France</option>
+						<option>Germany</option>
+						<option>Belgium</option>
+						<option>Netherlands</option>
+						<option>Iceland</option>
+						<option>Ireland</option>
+						<option>United States</option>
+						<option>Portugal</option>
+						<option>Spain</option>
+						<option>Italy</option>
+						<option>Canada</option>
+						<option>Other</option>
+					</select>
+				</li>
+				
+				<li class="card question-wrap">
+					<h3 class="question main-question">Select Region</h3>
+					<select>
+						<option>London</option>
+						<option>South East</option>
+						<option>South West</option>
+						<option>South</option>
+						<option>North</option>
+						<option>Wales</option>
+						<option>Scotland</option>
+						<option>Other</option>
+					</select>
+				</li>
+				
+				<li class="card question-wrap" style="margin-bottom:60px;">
+					<h3 class="question main-question">Museum</h3>
+					<small>Select a museum to enable automated content for your students, including scannable interactive exhibits, custom made by the museums.</small>
+					<select>
+						<option>National History Museum</option>
+						<option>Science Museum</option>
+						<option>Design Museum</option>
+						<option>V&A</option>
+						<option>Imperial War Museum</option>
+						<option>Transport Museum</option>
+						<option>The National Gallery</option>
+						<option>Tate Modern</option>
+						<option>Other</option>
+					</select>
+				</li>
+				
+				<li class="card question-wrap" style="margin-bottom:60px;">
+					<h3 class="question main-question">Activity Preview</h3>
+					<small>Check the correct automated details have been found by Yello.</small>
+					<div class="content-item activity-preview">
+					
+						<div class="inner-card" style="margin-bottom: 10px;">
+							<div class="gmap gmap-small">		
+								<img src="http://maps.googleapis.com/maps/api/staticmap?center=51.501905,-0.130000&zoom=16&format=png&sensor=false&size=840x200&maptype=roadmap&style=feature:road.arterial|visibility:on|color:0xffffff&style=feature:road.arterial|visibility:on|color:0xfedf3d&style=feature:road.highway|visibility:on|color:0xfedf3d&style=feature:road.local|element:geometry|visibility:on|color:0xffffff&style=feature:landscape|visibility:on|color:0xe4eaf0&style=feature:water|visibility:on|color:0x7fc8ed&style=feature:road|element:labels|visibility:off&style=feature:poi.park|element:geometry.fill|visibility:on|color:0x87ce49&style=feature:poi.park|element:labels|visibility:off&style=feature:landscape.man_made|element:geometry|visibility:off|weight:0.9&style=feature:road|element:geometry.stroke|weight:0.1|visibility:off&style=element:labels|visibility:off" alt="Natural History Museum">
+								<span class="pin"></span>	
+							</div>			
+							<!-- /.gmap -->	
+							<h3 class="ss-bookmark">Natural History Museum</h3>
+						</div>
+						
+						<div class="inner-card info-card">
+							<p class="intro">The Natural History Museum in London is a museum exhibiting a vast range of specimens.</p>
+							<p>The museum is home to life and earth science specimens comprising some 70 million items within five main collections.</p>
+							<p>The museum is particularly famous for its exhibition of dinosaur skeletons and ornate architecture—sometimes dubbed a cathedral of nature—both exemplified by the large Diplodocus.</p>
+						</div>
+						
+					</div>
+				</li>
+
+			</ul>
+		</div>
+		<!-- /.create-students-content -->
+		
+		<button class="btn purple-btn" ng-click="ons.navigator.popPage()" >Save Activity</button>
+	
+	</ons-scroller>
+
+</ons-page>	 

@@ -1,0 +1,36 @@
+<ons-page class="group-map-wrap">
+
+	<!-- .bar-nav -->
+	<header class="bar bar-nav">
+		<a ng-click="ons.navigator.popPage()" class="icon icon-left icon-left pull-left"></a>
+	    <h1 class="title">Red Group Map</h1>
+	    <a id="right-side-menu" class="icon icon-menu pull-right"></a>
+	</header>
+	<!-- /.bar-nav -->
+	
+	<!-- .sub-bar-nav -->
+	<header class="bar bar-nav sub-bar-nav trip-sub-bar-nav" ng-click="ons.screen.resetToPage('timeline.html')">
+	    <h1 class="title">Yr8 London Trip</h1>
+	    <div class="progress-bar-wrap">
+	        <span class="progress-bar bar-80"></span>
+	    </div>
+	</header>
+	<!-- /.sub-bar-nav -->
+	
+	<!-- .gmap -->
+	<div class="gmap">		
+		<img src="http://maps.googleapis.com/maps/api/staticmap?center=51.501751,-0.129981&zoom=16&format=png&sensor=false&size=640x500&maptype=roadmap&style=feature:road.arterial|visibility:on|color:0xffffff&style=feature:road.arterial|visibility:on|color:0xfedf3d&style=feature:road.highway|visibility:on|color:0xfedf3d&style=feature:road.local|element:geometry|visibility:on|color:0xffffff&style=feature:landscape|visibility:on|color:0xe4eaf0&style=feature:water|visibility:on|color:0x7fc8ed&style=feature:road|element:labels|visibility:off&style=feature:poi.park|element:geometry.fill|visibility:on|color:0x82c828&style=feature:poi.park|element:labels|visibility:off&style=feature:landscape.man_made|element:geometry|visibility:off|weight:0.9&style=feature:road|element:geometry.stroke|weight:0.1|visibility:off&style=element:labels|visibility:off" alt="Natural History Museum">
+		
+		<div class="pin john"><span class="avatar john"></span></div>
+		<div class="pin james"><span class="avatar james"></span></div>
+		<div class="pin sarah"><span class="avatar sarah"></span></div>
+		<div class="pin kele"><span class="avatar kele"></span></div>
+		<div class="pin steve"><span class="avatar steve"></span></div>
+		<div class="pin denver"><span class="avatar denver"></span></div>
+		<div class="pin natasha"><span class="avatar natasha"></span></div>
+		<div class="pin katie"><span class="avatar"></span></div>
+		
+	</div>			
+	<!-- /.gmap -->
+
+</ons-page>	 

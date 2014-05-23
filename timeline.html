@@ -1,32 +1,29 @@
-<ons-navigator title="Timeline" hide-toolbar="true">
-	<ons-page class="timeline-wrap">
-
+<ons-navigator title="Active School Trip" hide-toolbar="true">
+	<ons-page class="timeline-wrap teacher-wrap">
+	
 		<!-- .bar-nav -->
 		<header class="bar bar-nav">
-			<a id="right-side-menu" class="icon icon-menu pull-right">
 		    <h1 class="title logo"></h1>
+		    <a id="right-side-menu" class="icon icon-menu pull-right"></a>
 		</header>
 		<!-- /.bar-nav -->
 		
+		<!-- .sub-bar-nav -->
+		<header class="bar bar-nav sub-bar-nav trip-sub-bar-nav" ng-click="ons.screen.resetToPage('timeline.html')">
+		    <h1 class="title">Yr8 London Trip</h1>
+		    <div class="progress-bar-wrap">
+		        <span class="progress-bar bar-80"></span>
+		    </div>
+		</header>
+		<!-- /.sub-bar-nav -->
+		
 		<ons-scroller>
-		    
+		    <div class="content-title">
+		    	<h1>Yr8 London Trip</h1>
+		    	<span class="content-title-meta ss-clock">Active School Trip</span>
+		    </div>
 		    <!-- .activity-content -->
 		    <ul class="activity-content inner-content">
-		        
-		        <!-- .content-item -->
-		        <li class="content-item register-item">
-		            <div class="fullspan-img"></div>
-		            <div class="card">
-		                <a class="inner-card">
-		                	<span class="checkbox ss-check checked"></span>
-		                    <h3>Register</h3>
-		                </a>
-		                <ul class="meta">
-		                    <li class="time ss-clock">9:00</li>
-		                </ul>
-		            </div>
-		        </li>
-		        <!-- /.content-item -->
 		        
 		        <!-- .content-item -->
 		        <li class="content-item transport-item">
@@ -55,13 +52,11 @@
 		            <div class="card">
 		                <ul class="meta">
 		                    <li class="time ss-clock">10:45</li>
-		                    <li class="tasks ss-checkclipboard">4</li>
-		                    <li class="tasks ss-linechartclipboard">3</li>
 		                </ul>
 		                <div class="progress-bar-wrap">
 		                    <span class="progress-bar bar-80">Active</span>
 		                </div>
-		                <a ng-click="ons.navigator.pushPage('activity.html')" class="inner-card">
+		                <div class="inner-card">
 		                	<!--<img src="assets/images/activity/nhm-sm.jpg" alt="">-->
 		                	<!-- .gmap -->
 		                	<div class="gmap gmap-small">		
@@ -70,7 +65,7 @@
 		                	</div>			
 		                	<!-- /.gmap -->	
 		                    <h3 class="ss-bookmark">Natural History Museum</h3>
-		                </a>
+		                </div>
 		            </div>
 		        </li>
 		        <!-- /.content-item -->
@@ -93,12 +88,10 @@
 		            <div class="card">
 		                <ul class="meta">
 		                    <li class="time ss-clock">13:15</li>
-		                    <li class="tasks ss-checkclipboard">1</li>
-		                    <li class="tasks ss-linechartclipboard">7</li>
 		                </ul>
-		                <a ng-click="ons.navigator.pushPage('activity.html')" class="inner-card">
+		                <div class="inner-card">
 		                    <h3 class="ss-rocket">Science Museum</h3>
-		                </a>
+		                </div>
 		            </div>
 		        </li>
 		        <!-- /.content-item -->
@@ -108,12 +101,10 @@
 		            <div class="card">
 		                <ul class="meta">
 		                    <li class="time ss-clock">14:00</li>
-		                    <li class="tasks ss-checkclipboard">10</li>
-		                    <li class="tasks ss-linechartclipboard">0</li>
 		                </ul>
-		                <a ng-click="ons.navigator.pushPage('activity.html')" class="inner-card">
+		                <div class="inner-card">
 		                    <h3 class="ss-hanger">V&A</h3>
-		                </a>
+		                </div>
 		            </div>
 		        </li>
 		        <!-- /.content-item -->
@@ -147,10 +138,8 @@
 		                    <li class="time ss-clock">16:25</li>
 		                </ul>
 		                <div class="inner-card">
-		                    <img src="assets/images/picture-frame.svg" alt="Yello School Trip Complete">
 		                    <div class="complete-inner-card">
-		                        <h2>School trip complete!</h2>
-		                        <button class="btn blue-btn exit-yello-btn">Exit Yello</button>
+		                        <h2>School trip complete</h2>
 		                    </div>
 		                </div>
 		            </div>

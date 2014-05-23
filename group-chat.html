@@ -1,0 +1,89 @@
+<ons-page class="group-chat-wrap">
+
+	<!-- .bar-nav -->
+	<header class="bar bar-nav">
+		<a ng-click="ons.navigator.popPage()" class="icon icon-left icon-left pull-left"></a>
+	    <h1 class="title">Red Group Chat</h1>
+	    <a id="right-side-menu" class="icon icon-menu pull-right"></a>
+	</header>
+	<!-- /.bar-nav -->
+	
+	<!-- .sub-bar-nav -->
+	<header class="bar bar-nav sub-bar-nav trip-sub-bar-nav" ng-click="ons.screen.resetToPage('timeline.html')">
+	    <h1 class="title">Yr8 London Trip</h1>
+	    <div class="progress-bar-wrap">
+	        <span class="progress-bar bar-80"></span>
+	    </div>
+	</header>
+	<!-- /.sub-bar-nav -->
+	
+	<!-- .chat-input -->
+	<div class="chat-input">
+		<!--<a class="chat-input-photo ss-camera" ng-click="ons.screen.presentPage('photos.html')"></a>-->
+		<input type="text" placeholder="Group message">
+		<a class="chat-send">Send</a>
+	</div>
+	<!-- /.chat-input -->
+	
+	<ons-scroller>
+	    <!-- .group-chat -->
+	   	<div class="group-chat inner-content">
+	   		<!-- .chat -->
+			<ul class="chat">
+				<li class="timestamp">Today at 9:01am</li>
+	   	    	<li>
+	   	    		<button ng-click="ons.screen.presentPage('profile-purple.html')"  class="avatar natasha"></button>
+	   	    		<div class="bubble">Man this train is boring! We must be there soon?</div>
+	   	    	</li>
+	   	    	<li>
+	   	    		<div class="bubble my-bubble">Hi Group! Hope you enjoy the school trip. Please, please do ask questions here if you are unsure of anything!!</div>
+	   	    	</li>
+	   	    	<li class="timestamp">Today at 11:24am</li>
+	   	    	<li>
+	   	    		<button ng-click="ons.screen.presentPage('profile-purple.html')"  class="avatar kele"></button>
+	   	    		<div class="bubble">We’re over by the cafe drinking 
+	   	    		some lattes...</div>
+	   	    	</li>
+	   	    	<li>
+	   	    		<button ng-click="ons.screen.presentPage('profile-purple.html')"  class="avatar sarah"></button>
+	   	    		<div class="bubble">Okay, I'll make my way over there. Grab me a double espresso please!</div>
+	   	    	</li>
+	   	    	<li>
+	   	    		<button ng-click="ons.screen.presentPage('profile-purple.html')"  class="avatar steve"></button>
+	   	    		<div class="bubble">
+	   	    			<img src="assets/images/activity/nhm-5.jpg" alt="">
+	   	    		Cool beans, look at this dino!</div>
+	   	    	</li>
+	   	    	<li class="timestamp">Today at 12:32pm</li>
+	   	    	<li>
+	   	    		<button ng-click="ons.screen.presentPage('profile-purple.html')"  class="avatar denver"></button>
+	   	    		<div class="bubble">James, we're in the natural science section, upstairs</div>
+	   	    	</li>
+	   	    	<li>
+	   	    		<button ng-click="ons.screen.presentPage('profile-purple.html')"  class="avatar natasha"></button>
+	   	    		<div class="bubble">Anyone find those collectible stickers yet for the Science Museum activity?!?!</div>
+	   	    	</li>
+	   	    	<li class="timestamp">Today at 12:52pm</li>
+	   	    	<li>
+	   	    		<div class="bubble my-bubble">Natasha where are you?!?!? I've been waiting for over 10 mins now!</div>
+	   	    	</li>
+	   	    	<li>
+	   	    		<button ng-click="ons.screen.presentPage('profile-purple.html')"  class="avatar steve"></button>
+	   	    		<div class="bubble">We're all in the cafe!</div>
+	   	    	</li>
+	   	    	<li class="timestamp">Today at 2:21pm</li>
+	   	    	<li>
+	   	    		<div class="bubble my-bubble">I am just reminding all pupils, we only have 40minutes left, so start to make your way back to me outside the entrance of the V&A museum.</div>
+	   	    	</li>
+	   	    
+	   	    	
+	   	    	<li class="clearfix"></li>
+	   	   	</ul>
+	   	   	<!-- /.chat -->
+
+	   	</div>
+	   	<!-- /.group-chat -->
+	
+	</ons-scroller>
+
+</ons-page>	 

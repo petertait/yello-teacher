@@ -1,0 +1,95 @@
+<ons-navigator title="School Trips" hide-toolbar="true"  data-snap-ignore="true">
+	<ons-page class="trips-wrap modal">
+	
+		<!-- .bar-nav -->
+		<header class="bar bar-nav">
+			<a ng-click="ons.screen.dismissPage()" class="icon icon-left icon-close pull-left"></a>
+		    <h1 class="title">School Trips</h1>
+		    <!--<a id="right-side-menu" class="icon icon-menu pull-right"></a>-->
+		</header>
+		<!-- /.bar-nav -->
+		
+		<ons-scroller>
+			<div class="create-trip-bar button-bar"><a class="btn card-btn ss-compose" ng-click="ons.screen.presentPage('create-trip-1.html')">Trip Creator</a></div>
+		    <h1 class="content-title">School Trips</h1>
+		    
+		    <!-- .active-trips-item-->
+		    <div class="full-content-item trips-item active-trips-item challenges-item">
+		        <div class="card">
+		        	<div class="meta">
+		        	    <h2 class="ss-clock">1 <span>Active Trip</span></h2>
+		        	</div>
+		        	<div class="progress-bar-wrap">
+		        	    <span class="progress-bar bar-50">Active</span>
+		        	</div>
+	        		<a ng-click="ons.screen.resetToPage('timeline.html')" class="inner-card active-timeline-nav">
+	        		    <h3>Yr8 London Trip</h3>
+	        		    <h5 class="list-meta ss-clock">20, Jan 2014</h5>
+	        		</a>
+		        </div>
+		    </div>
+		    <!-- /.active-trips-item -->
+		    
+		    <!-- .trips-item -->
+		    <div class="full-content-item trips-item challenges-item">
+		        <div class="card">
+		            <div class="meta">
+		                <h2 class="ss-clockwise">3 <span>Upcoming Trips</span></h2>
+		            </div>
+		            <ul class="challenges-list">
+		                <li>
+		                	<button class="ss-delete main-delete"></button>
+		                	<a ng-click="ons.navigator.pushPage('timeline-other.html')" class="inner-card">
+		                	    <h3>Yr9 History Trip</h3>
+		                	    <h5 class="list-meta ss-clock">23, Jan 2014</h5>
+		                	</a>
+		                </li>
+		                <li>
+		                	<button class="ss-delete main-delete"></button>
+		                	<a ng-click="ons.navigator.pushPage('timeline-other.html')" class="inner-card">
+		                	    <h3>Y10 History Trip</h3>
+		                	    <h5 class="list-meta ss-clock">28, Jan 2014</h5> 
+		                	</a>
+		                </li>
+		                <li>
+		                	<button class="ss-delete main-delete"></button>
+		                	<a ng-click="ons.navigator.pushPage('timeline-other.html')" class="inner-card">
+		                	    <h3>Canada Ski Trip 2015</h3>
+		                	    <h5 class="list-meta ss-clock">11, Dec 2015</h5>
+		                	</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		    <!-- /.trips-item -->
+		    
+		    <!-- .trips-item -->
+		    <div class="full-content-item trips-item challenges-item completed">
+		        <div class="card">
+		            <div class="meta">
+		                <h2 class="ss-clockwise">2 <span>Completed Trips</span></h2>
+		            </div>
+		            <ul class="challenges-list">
+		                <li class="completed">
+		                	<button class="ss-hyphen main-hide"></button>
+		                	<a ng-click="ons.navigator.pushPage('timeline-other.html')" class="inner-card">
+		                	    <h3>Austria Ski Trip 2014</h3>
+		                	    <h5 class="list-meta ss-clock">10, Dec 2013</h5>
+		                	</a>
+		                </li>
+		                <li class="completed">
+		                	<button class="ss-hyphen main-hide"></button>
+		                	<a ng-click="ons.navigator.pushPage('timeline-other.html')" class="inner-card">
+		                	    <h3>Yr 7 English Cinema Trip</h3>
+		                	    <h5 class="list-meta ss-clock">6, Dec 2013</h5>
+		                	</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		    <!-- /.trips-item -->
+		
+		</ons-scroller>
+	
+	</ons-page>	 
+</ons-navigator>

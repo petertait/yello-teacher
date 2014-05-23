@@ -1,0 +1,69 @@
+<ons-navigator title="Profile" hide-toolbar="true">
+	<ons-page class="profile-wrap modal">
+	
+		<!-- .bar-nav -->
+		<header class="bar bar-nav">
+			<a ng-click="ons.screen.dismissPage()" class="icon icon-left icon-close pull-left"></a>
+		    <h1 class="title">Profile</h1>
+		    <!--<a id="right-side-menu" class="icon icon-menu pull-right"></a>-->
+		</header>
+		<!-- /.bar-nav -->
+		
+		<ons-scroller>
+			
+			<!-- #profile -->
+			<div class="profile-content inner-content">
+			    
+			    <div class="profile-header">
+			    	<div class="fullspan-img"></div>
+			    	<span class="avatar natasha">Natasha Cope</span>
+			    	<h1>Natasha Cope</h1>
+			    	<ul class="profile-meta">
+			    		<li class="ss-user">Student</li>
+			    		<li class="ss-usergroup">Purple</li>
+			    	</ul>
+			    </div>
+			    <div class="profile-info-wrap">
+			    	<h2 class="ss-info sub-title">Student Information</h2>
+			    	<!-- .create-trip-content -->
+	    			<ul class="create-trip-content">
+	    	
+	    				<li class="card question-wrap">
+	    					<h3 class="question">Date of Birth</h3>
+	    					<div class="static-answer-wrap">
+	    						<p class="static-answer">07/03/2000</p>
+	    					</div>
+	    				</li>
+	    				<li class="card question-wrap">
+	    					<h3 class="question">Personal Address</h3>
+	    					<div class="static-answer-wrap">
+	    						<p class="static-answer">3 Downing Street<br>Government Street<br>London<br>SW19 1BJ</p>
+	    					</div>
+	    				</li>
+	    				<li class="card question-wrap">
+	    					<h3>Emergency Contact</h3>
+	    					<div class="static-answer-wrap">
+		    					<p class="static-answer">James Cope</p>
+		    					<p class="static-answer"><strong>01962 287629</strong></p>
+	    					</div>
+	    				</li>
+	    				
+	    				<li class="card question-wrap">
+	    					<h3 class="question">Special Considerations</h3>
+	    					<div class="static-answer-wrap">
+	    						<p class="static-answer">Can suffer from Asthma attacks, must carry inhaler at all times.</p>
+	    					</div>
+	    				</li>
+	    	
+	    			</ul>
+	    			<!-- /.create-trip-content -->
+	    			
+	    			<button id="edit-profile" class="btn purple-btn ss-erase">Edit Profile</button>
+			    </div>
+			 
+			 </div>
+		
+		</ons-scroller>
+	
+	</ons-page>	 
+</ons-navigator>

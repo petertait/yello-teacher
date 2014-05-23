@@ -1,0 +1,115 @@
+
+<ons-page class="create-trip-wrap create-challenge-wrap modal" data-snap-ignore="true">
+
+	<!-- .bar-nav -->
+	<header class="bar bar-nav">
+		<a ng-click="ons.navigator.popPage()" class="icon icon-left pull-left"></a>
+	    <h1 class="title">Trip Creator</h1>
+	</header>
+	<!-- /.bar-nav -->
+	
+	<!-- .bar-nav -->
+	<header class="bar bar-nav sub-bar-nav">
+	    <h1 class="title">Create Challenge</h1>
+	</header>
+	<!-- /.bar-nav -->
+	
+	
+	<ons-scroller>
+		
+		<!--<div class="content-title">
+			<h1>Create Challenge</h1>
+		</div>-->
+					
+		<!-- .create-students-content -->
+		<div class="create-trip-content create-challenge-content full-content-item">
+		
+			<!-- .add-challenge-questions -->
+			<div class="add-challenge-questions">
+				<h2 class="add-questions-title">Add Challenge Task</h2>
+				<ul class="scroll-carousel" data-snap-ignore="true">
+					<li>
+						<button class="add-challenge-btn challenge-photo-btn ss-picture">Image</button>
+					</li>
+					<li>
+						<button class="add-challenge-btn challenge-text-btn ss-pen">Text Question</button>
+					</li>
+					<li>
+						<button class="add-challenge-btn challenge-photo-btn ss-stove ">Multiple Choice</button>
+					</li>
+					<li>
+						<button class="add-challenge-btn challenge-checklist-btn ss-list">Checklist</button>
+					</li>
+				</ul>
+			</div>
+			<!-- /.add-challenge-questions -->
+			
+			<ul class="card">
+				
+				<li class="card question-wrap">
+					<h3 class="question main-question">Challenge Title</h3>
+					<input value="The science behind T-Rex Dinosaurs">
+				</li>
+				<li class="card question-wrap" style="margin-bottom:60px;">
+					<h3 class="question main-question">Challenge Description</h3>
+					<textarea>Answer these questions and grab some points for your group.</textarea>
+				</li>
+				
+				<li class="card question-wrap">
+					<h3 class="question ss-pen  main-question">Text Question</h3>
+					<small>Get sutdents to answer a question task.</small>
+					<button class="ss-delete main-delete"></button>
+					<textarea>Why does T-Rex have the shortest arms within the Dino kingdom?</textarea>
+					<div class="question-wrap pin-question-wrap">
+						<h3 class="question">Points Value</h3>
+						<input type="number" min="0" max="9" value="5" class="pin-1">
+					</div>
+				</li>
+				
+				<li class="card question-wrap">
+					<h3 class="question ss-list  main-question">Checklist</h3>
+					<small>Set mini tasks for students to complete.</small>
+					<button class="ss-delete main-delete"></button>
+					<textarea>Collect the following objects</textarea>
+					<h3 class="question" style="margin-top: 30px;">Checklist Items</h3>
+					<ul class="checklist-inputs">
+						<li class="checklist-input">
+							<input value="5 Dino Stickers">
+							<button class="ss-hyphen"></button>
+						</li>
+						<li class="checklist-input">
+							<input value="2 Leaflets">
+							<button class="ss-hyphen"></button>
+						</li>
+						<li class="checklist-input">
+							<input value="10 Golden Tickets">
+							<button class="ss-hyphen"></button>
+						</li>
+					</ul>
+					<button class="add-checklist-input card-btn btn">Add Checklist Item</button>
+					<div class="question-wrap pin-question-wrap">
+						<h3 class="question">Points Value</h3>
+						<input type="number" min="0" max="9" value="5" class="pin-1">
+					</div>
+				</li>
+				
+				<li class="card question-wrap">
+					<h3 class="question ss-pen main-question">Text Question</h3>
+					<small>Get sutdents to answer a question task.</small>
+					<button class="ss-delete main-delete"></button>
+					<textarea>Describe the natural habitat of a T-Rex</textarea>
+					<div class="question-wrap pin-question-wrap">
+						<h3 class="question">Points Value</h3>
+						<input type="number" min="0" max="9" value="5" class="pin-1">
+					</div>
+				</li>
+
+			</ul>
+		</div>
+		<!-- /.create-students-content -->
+		
+		<button class="btn purple-btn" ng-click="ons.navigator.popPage()" >Save Challenge</button>
+	
+	</ons-scroller>
+
+</ons-page>	 
